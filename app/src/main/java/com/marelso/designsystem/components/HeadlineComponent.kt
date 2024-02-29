@@ -10,7 +10,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 
 @Composable
-fun Headline(
+fun HeadlineComponent(
     modifier: Modifier = Modifier,
     text: String,
     textAlign: TextAlign = TextAlign.Start,

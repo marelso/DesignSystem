@@ -5,5 +5,5 @@ import com.marelso.designsystem.components.SubtitleComponent
 
 @Composable
 fun HomeSubtitleComponent() {
-    SubtitleComponent()
+    SubtitleComponent(text = "To Marelso's Design System")
 }

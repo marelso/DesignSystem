@@ -1,4 +1,4 @@
-package com.marelso.designsystem.components
+package com.marelso.designsystem.components.typography
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -10,7 +10,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 
 @Composable
-fun BodyComponent(
+fun CaptionComponent(
     modifier: Modifier = Modifier,
     text: String,
     textAlign: TextAlign = TextAlign.Start,
@@ -23,7 +23,7 @@ fun BodyComponent(
     maxLines = maxLines,
     overflow = textOverflow,
     textAlign = textAlign,
-    style = MaterialTheme.typography.bodyMedium.copy(
+    style = MaterialTheme.typography.labelSmall.copy(
         color = color,
         fontWeight = FontWeight(fontWeight)
     ),

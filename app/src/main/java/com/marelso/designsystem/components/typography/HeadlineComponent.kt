@@ -1,4 +1,4 @@
-package com.marelso.designsystem.components
+package com.marelso.designsystem.components.typography
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text

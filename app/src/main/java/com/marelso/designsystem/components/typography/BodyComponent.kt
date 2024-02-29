@@ -1,4 +1,4 @@
-package com.marelso.designsystem.components
+package com.marelso.designsystem.components.typography
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -10,20 +10,20 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 
 @Composable
-fun SubtitleComponent(
+fun BodyComponent(
     modifier: Modifier = Modifier,
     text: String,
     textAlign: TextAlign = TextAlign.Start,
     textOverflow: TextOverflow = TextOverflow.Ellipsis,
     color: Color = MaterialTheme.colorScheme.onSurface,
-    fontWeight: Int = 700,
+    fontWeight: Int = 400,
     maxLines: Int = 2
 ) = Text(
     text = text,
     maxLines = maxLines,
     overflow = textOverflow,
     textAlign = textAlign,
-    style = MaterialTheme.typography.headlineSmall.copy(
+    style = MaterialTheme.typography.bodyMedium.copy(
         color = color,
         fontWeight = FontWeight(fontWeight)
     ),

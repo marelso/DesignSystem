@@ -1,9 +1,15 @@
 package com.marelso.designsystem.ui.home
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
-import com.marelso.designsystem.ui.home.components.HomeHeadline
+import androidx.compose.ui.Modifier
+import com.marelso.designsystem.ui.home.components.HomeHeadlineComponent
+import com.marelso.designsystem.ui.theme.dimen4
 
 @Composable
 fun HomeScreenHoisting() {
-    HomeHeadline()
+    Column(modifier = Modifier.padding(dimen4)) {
+        HomeHeadlineComponent()
+    }
 }

@@ -10,19 +10,25 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.marelso.designsystem.navigation.NavGraph
 import com.marelso.designsystem.ui.theme.DesignSystemTheme
 
 class MainActivity : ComponentActivity() {
+
+    private var navController: NavHostController? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             DesignSystemTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+                navController = rememberNavController()
+                navController?.let { host ->
+                    NavGraph(
+                        navHostController = host,
+                        onClose = { finish() }
+                    )
                 }
             }
         }

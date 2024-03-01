@@ -14,5 +14,5 @@ fun HomeButtonComponent(
         label = "Buttons",
         isOutlined = false,
         onClick = { onClick.invoke() }
-    ))
+    ), modifier = modifier)
 }

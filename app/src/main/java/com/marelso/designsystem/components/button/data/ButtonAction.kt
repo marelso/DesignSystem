@@ -8,10 +8,8 @@ import androidx.compose.ui.unit.Dp
 import com.marelso.designsystem.ui.theme.dimen2
 
 data class ButtonAction(
-    val label: String? = null,
+    val label: String,
     val isOutlined: Boolean = false,
-    val contentTint: Color? = null,
-    val backgroundTint: Color? = null,
     @DrawableRes val trailingIcon: Int? = null,
     @DrawableRes val leadingIcon: Int? = null,
     val radius: Dp = dimen2,

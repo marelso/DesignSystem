@@ -1,4 +1,4 @@
-package com.marelso.designsystem.components.button.data
+package com.marelso.designsystem.components.button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
+import com.marelso.designsystem.components.button.data.ButtonAction
 import com.marelso.designsystem.ui.theme.dimen2
 import com.marelso.designsystem.ui.theme.dimen6
 

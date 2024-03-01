@@ -3,7 +3,6 @@ package com.marelso.designsystem.components.button
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.marelso.designsystem.components.button.data.ButtonAction
-import com.marelso.designsystem.components.button.data.OutlinedButtonComponent
 
 @Composable
 fun ActionButtonComponent(

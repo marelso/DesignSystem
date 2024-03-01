@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
 import com.marelso.designsystem.ui.home.components.HomeBodyComponent
 import com.marelso.designsystem.ui.home.components.HomeButtonComponent
 import com.marelso.designsystem.ui.home.components.HomeCardComponent
@@ -17,7 +18,12 @@ import com.marelso.designsystem.ui.theme.dimen2
 import com.marelso.designsystem.ui.theme.dimen4
 
 @Composable
-fun HomeScreenHoisting() {
+fun HomeScreenHoisting(navHostController: NavHostController) {
+    HomeScreen(navHostController)
+}
+
+@Composable
+fun HomeScreen(navHostController: NavHostController) {
     Column(modifier = Modifier.padding(dimen4)) {
         HomeHeadlineComponent(modifier = Modifier.padding(bottom = dimen2))
         HomeSubtitleComponent(modifier = Modifier.padding(bottom = dimen2))

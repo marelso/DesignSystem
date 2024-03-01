@@ -12,7 +12,7 @@ fun NavGraph(navHostController: NavHostController, onClose: () -> Unit) {
         navController = navHostController, startDestination = NavScreen.Home.route
     ) {
         composable(route = NavScreen.Home.route) {
-            HomeScreenHoisting()
+            HomeScreenHoisting(navHostController = navHostController)
         }
     }
 }

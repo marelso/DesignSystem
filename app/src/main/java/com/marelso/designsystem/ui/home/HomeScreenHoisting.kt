@@ -8,6 +8,7 @@ import com.marelso.designsystem.ui.home.components.HomeBodyComponent
 import com.marelso.designsystem.ui.home.components.HomeButtonComponent
 import com.marelso.designsystem.ui.home.components.HomeHeadlineComponent
 import com.marelso.designsystem.ui.home.components.HomeSubtitleComponent
+import com.marelso.designsystem.ui.home.components.HomeTextComponent
 import com.marelso.designsystem.ui.home.components.HomeTitleComponent
 import com.marelso.designsystem.ui.theme.dimen2
 import com.marelso.designsystem.ui.theme.dimen4
@@ -20,5 +21,6 @@ fun HomeScreenHoisting() {
         HomeBodyComponent(modifier = Modifier.padding(bottom = dimen4))
         HomeTitleComponent(modifier = Modifier.padding(bottom = dimen2))
         HomeButtonComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
+        HomeTextComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
     }
 }

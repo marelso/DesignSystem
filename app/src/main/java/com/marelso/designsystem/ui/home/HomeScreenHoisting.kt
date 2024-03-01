@@ -19,6 +19,6 @@ fun HomeScreenHoisting() {
         HomeSubtitleComponent(modifier = Modifier.padding(bottom = dimen2))
         HomeBodyComponent(modifier = Modifier.padding(bottom = dimen4))
         HomeTitleComponent(modifier = Modifier.padding(bottom = dimen2))
-        HomeButtonComponent()
+        HomeButtonComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
     }
 }

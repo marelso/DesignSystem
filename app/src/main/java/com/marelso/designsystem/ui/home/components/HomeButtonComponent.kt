@@ -1,17 +1,18 @@
 package com.marelso.designsystem.ui.home.components
 
-import android.app.Notification.Action
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalContext
-import androidx.core.content.ContextCompat
-import com.marelso.designsystem.R
+import androidx.compose.ui.Modifier
 import com.marelso.designsystem.components.button.ActionButtonComponent
 import com.marelso.designsystem.components.button.data.ButtonAction
 
 @Composable
-fun HomeButtonComponent() {
+fun HomeButtonComponent(
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit
+) {
     ActionButtonComponent(action = ButtonAction(
-        label = "asdhuadsuhsaf",
-        onClick = {}
+        label = "Buttons",
+        isOutlined = false,
+        onClick = { onClick.invoke() }
     ))
 }

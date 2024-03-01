@@ -26,7 +26,7 @@ fun ActionButtonComponent(modifier: Modifier = Modifier, action: ButtonAction) {
         val contentColor = action.contentTint ?: MaterialTheme.colorScheme.primary
         val backgroundColor = action.backgroundTint ?: MaterialTheme.colorScheme.onPrimary
         OutlinedButton(
-            onClick = { /*TODO*/ }, shape = RoundedCornerShape(action.radius),
+            onClick = { action.onClick.invoke() }, shape = RoundedCornerShape(action.radius),
             colors = ButtonDefaults.buttonColors(
                 containerColor = backgroundColor,
                 contentColor = contentColor

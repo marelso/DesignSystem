@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
+import com.marelso.designsystem.navigation.NavScreen
 import com.marelso.designsystem.ui.home.components.HomeBodyComponent
 import com.marelso.designsystem.ui.home.components.HomeButtonComponent
 import com.marelso.designsystem.ui.home.components.HomeCardComponent
@@ -30,7 +31,7 @@ fun HomeScreen(navHostController: NavHostController) {
         HomeBodyComponent(modifier = Modifier.padding(bottom = dimen4))
         HomeTitleComponent(modifier = Modifier.padding(bottom = dimen2))
         HomeButtonComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
-        HomeTextComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
+        HomeTextComponent(modifier = Modifier.padding(bottom = dimen2), onClick = { navHostController.navigate(route = NavScreen.Text.route) })
         HomeCollapsableTextComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
         HomeChipComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
         HomeCardComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})

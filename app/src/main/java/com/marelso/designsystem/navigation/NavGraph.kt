@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.marelso.designsystem.ui.home.HomeScreenHoisting
+import com.marelso.designsystem.ui.text.TextScreenHoisting
 
 @Composable
 fun NavGraph(navHostController: NavHostController, onClose: () -> Unit) {
@@ -16,7 +17,7 @@ fun NavGraph(navHostController: NavHostController, onClose: () -> Unit) {
         }
 
         composable(route = NavScreen.Text.route) {
-            HomeScreenHoisting(navHostController = navHostController)
+            TextScreenHoisting(navHostController = navHostController)
         }
     }
 }

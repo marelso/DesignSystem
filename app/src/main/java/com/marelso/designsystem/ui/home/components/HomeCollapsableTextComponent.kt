@@ -6,7 +6,7 @@ import com.marelso.designsystem.components.button.ActionButtonComponent
 import com.marelso.designsystem.components.button.data.ButtonAction
 
 @Composable
-fun HomeCollapsableText(modifier: Modifier = Modifier, onClick: () -> Unit) {
+fun HomeCollapsableTextComponent(modifier: Modifier = Modifier, onClick: () -> Unit) {
     ActionButtonComponent(action = ButtonAction(
         label = "Collapsable text components",
         isOutlined = false,

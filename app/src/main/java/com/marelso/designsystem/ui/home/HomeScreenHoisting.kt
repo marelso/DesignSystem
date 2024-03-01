@@ -22,5 +22,6 @@ fun HomeScreenHoisting() {
         HomeTitleComponent(modifier = Modifier.padding(bottom = dimen2))
         HomeButtonComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
         HomeTextComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
+        HomeCollapsableText(modifier = Modifier.padding(bottom = dimen2), onClick = {})
     }
 }

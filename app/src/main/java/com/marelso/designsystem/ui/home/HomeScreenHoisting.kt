@@ -6,6 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.marelso.designsystem.ui.home.components.HomeBodyComponent
 import com.marelso.designsystem.ui.home.components.HomeButtonComponent
+import com.marelso.designsystem.ui.home.components.HomeChipComponent
+import com.marelso.designsystem.ui.home.components.HomeCollapsableText
 import com.marelso.designsystem.ui.home.components.HomeHeadlineComponent
 import com.marelso.designsystem.ui.home.components.HomeSubtitleComponent
 import com.marelso.designsystem.ui.home.components.HomeTextComponent
@@ -23,5 +25,6 @@ fun HomeScreenHoisting() {
         HomeButtonComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
         HomeTextComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
         HomeCollapsableText(modifier = Modifier.padding(bottom = dimen2), onClick = {})
+        HomeChipComponent(modifier = Modifier.padding(bottom = dimen2), onClick = {})
     }
 }

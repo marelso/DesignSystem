@@ -8,7 +8,7 @@ import com.marelso.designsystem.components.button.data.ButtonAction
 @Composable
 fun HomeChipComponent(modifier: Modifier = Modifier, onClick: () -> Unit) {
     ActionButtonComponent(action = ButtonAction(
-        label = "Collapsable text components",
+        label = "Chip components",
         isOutlined = false,
         onClick = { onClick.invoke() }
     ), modifier = modifier)

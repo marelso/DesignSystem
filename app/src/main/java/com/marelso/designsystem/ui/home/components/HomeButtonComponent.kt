@@ -11,7 +11,7 @@ fun HomeButtonComponent(
     onClick: () -> Unit
 ) {
     ActionButtonComponent(action = ButtonAction(
-        label = "Buttons",
+        label = "Button components",
         isOutlined = false,
         onClick = { onClick.invoke() }
     ), modifier = modifier)
